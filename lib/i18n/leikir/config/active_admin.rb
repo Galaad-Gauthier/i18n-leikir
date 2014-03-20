@@ -27,7 +27,7 @@ ActiveAdmin.register Translation do
       f.input :value, as: :html_editor
     end
 
-    f.buttons
+    f.actions
   end
 
   controller do

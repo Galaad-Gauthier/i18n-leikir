@@ -6,8 +6,8 @@ require 'i18n/leikir/version'
 Gem::Specification.new do |spec|
   spec.name          = "i18n-leikir"
   spec.version       = I18n::Leikir::VERSION
-  spec.authors       = ["Pierre Flores"]
-  spec.email         = ["pierre.flores@leikir-studio.com"]
+  spec.authors       = ["Pierre Flores","Yann Hourdel","Galaad Gauthier"]
+  spec.email         = ["pierre.flores@leikir-studio.com","yann.hourdel@leikir-studio.com","galaad.gauthier@leikir-studio.com"]
   spec.description   = "I18n active record without the bullshit"
   spec.summary       = "it's pretty good"
   spec.homepage      = ""
