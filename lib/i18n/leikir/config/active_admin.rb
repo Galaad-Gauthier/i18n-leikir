@@ -10,15 +10,14 @@ ActiveAdmin.register Translation do
     default_actions
   end
 
-   config.batch_actions = true
-   batch_action :destroy, false
-   batch_action :edit_translation do |ids, inputs|
-     Translation.find(ids).each do |ts|
-       ts.value = inputs[:new_translation]
-       ts.save!
-     end
-     redirect_to :back, notice: "update ok"
-   end
+  batch_action :destroy, false
+  batch_action :edit_translation do |ids, inputs|
+    Translation.find(ids).each do |ts|
+      ts.value = inputs[:new_translation]
+      ts.save!
+    end
+    redirect_to :back, notice: "update ok"
+  end
 
   show do |t|
     attributes_table do
