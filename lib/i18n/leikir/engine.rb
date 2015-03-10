@@ -7,9 +7,9 @@ module I18n
         if defined?(I18n::Backend::ActiveRecord)
           require "i18n/leikir/config/after_initialize"
 
-          if defined?(::ActiveAdmin)
-            require "i18n/leikir/config/active_admin"
-          end
+          # if defined?(::ActiveAdmin)
+          #   require "i18n/leikir/config/active_admin"
+          # end
         else
           raise "::I18n::Backend::ActiveRecord not found, are you sure you included the i18n-activerecord gem ?"
         end
